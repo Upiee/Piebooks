@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bookshelf Apps</title>
+    <title>Buku Upie</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
@@ -16,30 +16,30 @@
 </header>
 <main>
     <section class="input_section">
-        <h2>Enter Your Book</h2>
+        <h2>Data Buku</h2>
         <form id="inputBook">
             <div class="input">
-                <label for="inputBookTitle">Title</label>
+                <label for="inputBookTitle">Judul</label>
                 <input id="inputBookTitle" type="text" required>
             </div>
             <div class="input">
-                <label for="inputBookAuthor">Author</label>
+                <label for="inputBookAuthor">Penulis</label>
                 <input id="inputBookAuthor" type="text" required>
             </div>
             <div class="input">
-                <label for="inputBookYear">Year</label>
+                <label for="inputBookYear">Tahun</label>
                 <input id="inputBookYear" type="number" required>
             </div>
             <div class="input_inline">
-                <label for="inputBookIsComplete">Finished Reading</label>
+                <label for="inputBookIsComplete">Sudah dibaca</label>
                 <input id="inputBookIsComplete" type="checkbox">
             </div>
-            <button id="bookSubmit" type="submit">Add book to 🛒 or  <span>Not finished reading</span></button>
+            <button id="bookSubmit" type="submit">Tambah Buku 🛒 atau <span>Belum dibaca</span></button>
         </form>
     </section>
 
     <section class="search_section">
-        <h2>Search for Books (Optional)</h2>
+        <h2>Cari Buku</h2>
         <form id="searchBook">
             <label for="searchBookTitle">Title</label>
             <input id="searchBookTitle" type="text">
@@ -48,13 +48,13 @@
     </section>
 
     <section class="book_shelf">
-        <h2>Not Finished Reading</h2>
+        <h2>Belum dibaca</h2>
         <div id="incompleteBookshelfList" class="book_list">
         </div>
     </section>
 
     <section class="book_shelf">
-        <h2>Finished Reading</h2>
+        <h2>Sudah dibaca</h2>
         <div id="completeBookshelfList" class="book_list">
         </div>
     </section>
