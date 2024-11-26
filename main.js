@@ -84,13 +84,13 @@
         t.classList.add("action");
         const o = document.createElement("button");
         (o.id = c.id),
-          (o.innerText = "Not Finished Reading"),
+          (o.innerText = "Belum dibaca"),
           o.classList.add("green"),
           o.addEventListener("click", d);
         const a = document.createElement("button");
 
         (a.id = c.id),
-          (a.innerText = "Delete 🗑️"),
+          (a.innerText = "Hapus 🗑️"),
           a.classList.add("red"),
           a.addEventListener("click", i);
 
@@ -113,12 +113,12 @@
         n.classList.add("action");
         const d = document.createElement("button");
         (d.id = c.id),
-          (d.innerText = "Finished Reading"),
+          (d.innerText = "Sudah dibaca"),
           d.classList.add("green"),
           d.addEventListener("click", o);
         const a = document.createElement("button");
         (a.id = c.id),
-          (a.innerText = "Delete 🗑️"),
+          (a.innerText = "Hapus 🗑️"),
           a.classList.add("red"),
           a.addEventListener("click", i);
 
@@ -143,9 +143,9 @@
   function editBook(bookId) {
     const book = e.find((b) => b.id === bookId); // Cari buku berdasarkan ID
     if (book) {
-      const newTitle = prompt("Input new title:", book.title);
-      const newAuthor = prompt("Input new author:", book.author);
-      const newYear = prompt("Input new year:", book.year);
+      const newTitle = prompt("Masukin judul:", book.title);
+      const newAuthor = prompt("Penulis:", book.author);
+      const newYear = prompt("Tahun:", book.year);
 
       // Jika user mengisi field baru, perbarui data buku
       if (newTitle !== null && newTitle.trim() !== "") {
