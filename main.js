@@ -143,9 +143,9 @@
   function editBook(bookId) {
     const book = e.find((b) => b.id === bookId); // Cari buku berdasarkan ID
     if (book) {
-      const newTitle = prompt("Masukin judul:", book.title);
-      const newAuthor = prompt("Penulis:", book.author);
-      const newYear = prompt("Tahun:", book.year);
+      const newTitle = prompt("Edit judul:", book.title);
+      const newAuthor = prompt("Edit Penulis:", book.author);
+      const newYear = prompt("Edit Tahun:", book.year);
 
       // Jika user mengisi field baru, perbarui data buku
       if (newTitle !== null && newTitle.trim() !== "") {
